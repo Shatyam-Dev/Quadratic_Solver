@@ -1,0 +1,12 @@
+# Quadratic_Solver
+A Basic Parsing Quadratic Equation Solver 
+
+##Functions:
+-Can get answers for general case.
+-Can parse equations with or without spaces
+-Supports Imaginary Numbers as roots
+
+##Limitation:
+-Cannot function on invisble coeffecient i.e. 0 
+
+Completed this Version,Plan to build another version with a different approach after learning more Concepts and logic
