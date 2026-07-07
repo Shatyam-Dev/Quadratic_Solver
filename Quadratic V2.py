@@ -6,15 +6,30 @@ import cmath
 def quadratic_solver():
   #The OG Input 
     Equation=input("Enter the Quadratic Equation").lower()
-  
-    a = Equation.split("x")
-    b=Equation.replace(" ","")
+    k=Equation.replace(" ","")
+    a = k.split("x")
+    
+    if len(a)==2:
+        a.insert(0," ")
     b=re.split(r'\^2',a[1] , maxsplit=2)
 
+    
+
+    if a[0]=="":
+        a[0]=1
+    if a[0]=="-":
+        a[0]=-1 
+    if b[1]=="":
+        b[1]=1
+    if b[1]=="-":
+        b[1]=-1       
     #coeffecients
     coeff_a=int(a[0])
     coeff_b=int(b[1])
     coeff_c=int(a[2])
+
+   
+
 
     #Adding the Components 
     b_squared=coeff_b**2
